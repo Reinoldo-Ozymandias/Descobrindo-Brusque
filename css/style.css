@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito:wght@400;700;800&display=swap');
 
-/* ===== RESET & BASE ===== */
+/* Reset e base */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -23,7 +23,7 @@ html, body {
   overflow: hidden;
 }
 
-/* ===== SCREENS ===== */
+/* Telas */
 .screen {
   position: absolute; inset: 0;
   display: none;
@@ -34,7 +34,7 @@ html, body {
 }
 .screen.active { display: flex; }
 
-/* ===== BACKGROUND BLOBS (SVG inline) ===== */
+/* Manchas de fundo */
 .blobs {
   position: absolute; inset: 0;
   pointer-events: none;
@@ -43,7 +43,7 @@ html, body {
 }
 .blobs svg { position: absolute; }
 
-/* ===== HEADER ===== */
+/* Cabeçalho */
 .top-bar {
   position: absolute;
   top: 18px; right: 24px;
@@ -56,7 +56,7 @@ html, body {
 }
 .top-bar:hover { text-decoration: underline; }
 
-/* ===== PROGRESS ===== */
+/* Barra de progresso */
 .progress-bar {
   position: absolute;
   top: 0; left: 0; right: 0;
@@ -71,7 +71,7 @@ html, body {
   border-radius: 0 3px 3px 0;
 }
 
-/* ===== TITLES ===== */
+/* Títulos */
 h1.game-title {
   font-family: var(--font-title);
   font-size: clamp(2.2rem, 5vw, 4rem);
@@ -91,7 +91,7 @@ h2.question-text {
   z-index: 2;
 }
 
-/* ===== HOME LAYOUT ===== */
+/* Layout da tela inicial */
 #screen-home .content {
   display: flex;
   align-items: center;
@@ -129,7 +129,7 @@ h2.question-text {
   width: 100%;
 }
 
-/* ===== BUTTONS ===== */
+/* Botões */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -171,7 +171,7 @@ h2.question-text {
   padding: 12px 32px;
 }
 
-/* ===== QUIZ LAYOUT ===== */
+/* Layout do quiz */
 #screen-quiz {
   justify-content: flex-start;
   padding-top: 70px;
@@ -232,13 +232,13 @@ h2.question-text {
   display: block;
 }
 
-/* Feedback states */
+/* Estados de resposta */
 .option-card.correct .option-label { background: var(--correct); }
 .option-card.correct .option-img-wrap { border-color: var(--correct); }
 .option-card.wrong   .option-label { background: var(--wrong); }
 .option-card.wrong   .option-img-wrap { border-color: var(--wrong); }
 
-/* ===== FOOTER BUTTONS ===== */
+/* Botões do rodapé */
 .footer-btns {
   position: absolute;
   bottom: 28px;
@@ -247,7 +247,7 @@ h2.question-text {
   z-index: 10;
 }
 
-/* ===== RESULT SCREENS ===== */
+/* Telas de resultado */
 .result-screen .mascot {
   width: clamp(260px, 38vw, 420px);
   position: relative;
@@ -279,7 +279,7 @@ h2.question-text {
   align-items: center;
 }
 
-/* ===== SCORE BADGE ===== */
+/* Placar */
 .score-badge {
   font-family: var(--font-title);
   font-size: 1.4rem;
@@ -290,7 +290,7 @@ h2.question-text {
   text-align: center;
 }
 
-/* ===== ANIMATIONS ===== */
+/* Animações */
 @keyframes bounce-in {
   0%   { transform: scale(0.5); opacity: 0; }
   70%  { transform: scale(1.08); }
@@ -306,7 +306,7 @@ h2.question-text {
 .anim-bounce { animation: bounce-in 0.5s cubic-bezier(.36,.07,.19,.97) both; }
 .anim-shake  { animation: shake 0.4s ease; }
 
-/* ===== CONFETTI ===== */
+/* Confete */
 .confetti-piece {
   position: absolute;
   width: 10px; height: 10px;
