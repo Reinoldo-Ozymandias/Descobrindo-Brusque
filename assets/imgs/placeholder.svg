@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="225" viewBox="0 0 300 225">
+  <rect width="300" height="225" fill="#F0D9C0" rx="10"/>
+  <text x="150" y="100" font-family="sans-serif" font-size="36" text-anchor="middle" fill="#E8734A">🖼️</text>
+  <text x="150" y="140" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#999">Adicione a imagem aqui</text>
+</svg>
