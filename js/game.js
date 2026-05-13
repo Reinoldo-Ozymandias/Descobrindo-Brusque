@@ -10,135 +10,135 @@ const QUESTIONS = [
     text: 'Onde fica a cidade de Brusque?',
     correctIndex: 0,
     options: [
-      { label: 'A - Brusque / SC',   img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Santa_Catarina_in_Brazil.svg/800px-Santa_Catarina_in_Brazil.svg.png', alt: 'Santa Catarina no Brasil' },
-      { label: 'B - Rio de Janeiro', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Rio_de_Janeiro_in_Brazil.svg/800px-Rio_de_Janeiro_in_Brazil.svg.png', alt: 'Rio de Janeiro no Brasil' },
-      { label: 'C - Argentina',      img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Argentina_in_South_America.svg/800px-Argentina_in_South_America.svg.png', alt: 'Mapa da Argentina' },
+      { label: 'A - Brusque / SC',   img: 'assets/imgs/mapa_santa_catarina.png', alt: 'Santa Catarina no Brasil' },
+      { label: 'B - Rio de Janeiro', img: 'assets/imgs/mapa_mesorregioes_rio_de_janeiro.png', alt: 'Rio de Janeiro no Brasil' },
+      { label: 'C - Argentina',      img: 'assets/imgs/mapa_argentina.png', alt: 'Mapa da Argentina' },
     ],
   },
   {
     text: 'Quem ajudou a fundar Brusque?',
     correctIndex: 0,
     options: [
-      { label: 'Barão de Schneeburg', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Francisco_Carlos_de_Schneeburg.jpg/400px-Francisco_Carlos_de_Schneeburg.jpg', alt: 'Barão de Schneeburg' },
-      { label: 'Jogador de Futebol',  img: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&q=80', alt: 'Jogador de futebol' },
-      { label: 'Astronauta',          img: 'https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=400&q=80', alt: 'Astronauta' },
+      { label: 'Barão de Schneeburg', img: 'assets/imgs/retrato_historico_pintura.png', alt: 'Barão de Schneeburg' },
+      { label: 'Jogador de Futebol',  img: 'assets/imgs/jogador_futebol_brasil.png', alt: 'Jogador de futebol' },
+      { label: 'Astronauta',          img: 'assets/imgs/astronauta_caminhada_espacial.png', alt: 'Astronauta' },
     ],
   },
   {
     text: 'De onde vieram os primeiros moradores?',
     correctIndex: 0,
     options: [
-      { label: 'Alemanha',      img: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/800px-Flag_of_Germany.svg.png', alt: 'Bandeira da Alemanha' },
-      { label: 'Japão',         img: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/800px-Flag_of_Japan.svg.png', alt: 'Bandeira do Japão' },
-      { label: 'África do Sul', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/800px-Flag_of_South_Africa.svg.png', alt: 'Bandeira da África do Sul' },
+      { label: 'Alemanha',      img: 'assets/imgs/bandeira_alemanha_1.png', alt: 'Bandeira da Alemanha' },
+      { label: 'Japão',         img: 'assets/imgs/bandeira_japao.png', alt: 'Bandeira do Japão' },
+      { label: 'África do Sul', img: 'assets/imgs/bandeira_africa_do_sul.png', alt: 'Bandeira da África do Sul' },
     ],
   },
   {
     text: 'Qual rio passa por Brusque?',
     correctIndex: 0,
     options: [
-      { label: 'Rio Itajaí-Mirim', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rio_Itaja%C3%AD-Mirim_em_Brusque.jpg/640px-Rio_Itaja%C3%AD-Mirim_em_Brusque.jpg', alt: 'Rio Itajaí-Mirim em Brusque' },
-      { label: 'Amazonas',         img: 'https://images.unsplash.com/photo-1518639192441-8fce0a366e2e?w=400&q=80', alt: 'Rio Amazonas' },
-      { label: 'Nilo',             img: 'https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?w=400&q=80', alt: 'Rio Nilo' },
+      { label: 'Rio Itajaí-Mirim', img: 'assets/imgs/enchente_cidade.png', alt: 'Rio Itajaí-Mirim em Brusque' },
+      { label: 'Amazonas',         img: 'assets/imgs/manguezal_vista_aerea.png', alt: 'Rio Amazonas' },
+      { label: 'Nilo',             img: 'assets/imgs/rio_nilo_vista_aerea.png', alt: 'Rio Nilo' },
     ],
   },
   {
     text: 'Brusque é famosa por?',
     correctIndex: 0,
     options: [
-      { label: 'Roupas', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', alt: 'Fábrica de roupas' },
-      { label: 'Aviões', img: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&q=80', alt: 'Fábrica de aviões' },
-      { label: 'Robôs',  img: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&q=80', alt: 'Robô industrial' },
+      { label: 'Roupas', img: 'assets/imgs/fabrica_confeccoes.png', alt: 'Fábrica de roupas' },
+      { label: 'Aviões', img: 'assets/imgs/fabrica_avioes.png', alt: 'Fábrica de aviões' },
+      { label: 'Robôs',  img: 'assets/imgs/robos_industriais.png', alt: 'Robô industrial' },
     ],
   },
   {
     text: 'Qual é o time da cidade?',
     correctIndex: 1,
     options: [
-      { label: 'Barcelona',  img: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/400px-FC_Barcelona_%28crest%29.svg.png', alt: 'Escudo do Barcelona' },
-      { label: 'Brusque FC', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Brusque_FC.png/400px-Brusque_FC.png', alt: 'Escudo do Brusque FC' },
-      { label: 'Flamengo',   img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Logo_Flamengo.svg/400px-Logo_Flamengo.svg.png', alt: 'Escudo do Flamengo' },
+      { label: 'Barcelona',  img: 'assets/imgs/escudo_barcelona.png', alt: 'Escudo do Barcelona' },
+      { label: 'Brusque FC', img: 'assets/imgs/escudo_brusque_fc.png', alt: 'Escudo do Brusque FC' },
+      { label: 'Flamengo',   img: 'assets/imgs/escudo_flamengo.png', alt: 'Escudo do Flamengo' },
     ],
   },
   {
     text: 'Como é o clima em Brusque?',
     correctIndex: 0,
     options: [
-      { label: 'Quente e chuvoso', img: 'https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=400&q=80', alt: 'Chuva forte' },
-      { label: 'Neve',             img: 'https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=400&q=80', alt: 'Cidade nevada' },
-      { label: 'Seco',             img: 'https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=400&q=80', alt: 'Deserto seco' },
+      { label: 'Quente e chuvoso', img: 'assets/imgs/chuva_janela_por_do_sol.png', alt: 'Chuva e sol' },
+      { label: 'Neve',             img: 'assets/imgs/cidade_nevada_inverno.png', alt: 'Cidade nevada' },
+      { label: 'Seco',             img: 'assets/imgs/dunas_deserto.png', alt: 'Deserto seco' },
     ],
   },
   {
     text: 'Qual é a comida comum em Brusque?',
     correctIndex: 0,
     options: [
-      { label: 'Cuca',  img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Cuca_de_banana.jpg/640px-Cuca_de_banana.jpg', alt: 'Cuca típica' },
-      { label: 'Sushi', img: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=400&q=80', alt: 'Sushi japonês' },
-      { label: 'Pizza', img: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80', alt: 'Pizza italiana' },
+      { label: 'Cuca',  img: 'assets/imgs/bolo_kuchen_farofa.png', alt: 'Cuca típica' },
+      { label: 'Sushi', img: 'assets/imgs/sushi_japones.png', alt: 'Sushi japonês' },
+      { label: 'Pizza', img: 'assets/imgs/pizza_pepperoni.png', alt: 'Pizza italiana' },
     ],
   },
   {
     text: 'Qual é a festa típica de Brusque?',
     correctIndex: 0,
     options: [
-      { label: 'Fenarreco', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Fenarreco_Brusque.jpg/640px-Fenarreco_Brusque.jpg', alt: 'Fenarreco em Brusque' },
-      { label: 'Carnaval',  img: 'https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?w=400&q=80', alt: 'Carnaval' },
-      { label: 'Natal',     img: 'https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=400&q=80', alt: 'Natal' },
+      { label: 'Fenarreco', img: 'assets/imgs/desfile_oktoberfest_blumenau.png', alt: 'Fenarreco em Brusque' },
+      { label: 'Carnaval',  img: 'assets/imgs/carnaval_rio_sambodromo.png', alt: 'Carnaval' },
+      { label: 'Natal',     img: 'assets/imgs/papai_noel_natal.png', alt: 'Natal' },
     ],
   },
   {
     text: 'Qual é a língua influente em Brusque?',
     correctIndex: 0,
     options: [
-      { label: 'Alemão', img: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/800px-Flag_of_Germany.svg.png', alt: 'Bandeira da Alemanha' },
-      { label: 'Chinês', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/800px-Flag_of_the_People%27s_Republic_of_China.svg.png', alt: 'Bandeira da China' },
-      { label: 'Árabe',  img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/800px-Flag_of_Saudi_Arabia.svg.png', alt: 'Bandeira Arábia Saudita' },
+      { label: 'Alemão', img: 'assets/imgs/bandeira_alemanha_2.png', alt: 'Bandeira da Alemanha' },
+      { label: 'Chinês', img: 'assets/imgs/bandeira_china.png', alt: 'Bandeira da China' },
+      { label: 'Árabe',  img: 'assets/imgs/bandeira_arabia_saudita.png', alt: 'Bandeira Arábia Saudita' },
     ],
   },
   {
     text: 'O que tem de especial na cidade?',
     correctIndex: 0,
     options: [
-      { label: 'Lojas',     img: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=400&q=80', alt: 'Lojas de roupas' },
-      { label: 'Florestas', img: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=400&q=80', alt: 'Floresta tropical' },
-      { label: 'Montanhas', img: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&q=80', alt: 'Montanhas' },
+      { label: 'Lojas',     img: 'assets/imgs/supermercado_fip.png', alt: 'Lojas de roupas' },
+      { label: 'Florestas', img: 'assets/imgs/floresta_amazonica_aerea.png', alt: 'Floresta tropical' },
+      { label: 'Montanhas', img: 'assets/imgs/montanhas_nevadas_floresta.png', alt: 'Montanhas' },
     ],
   },
   {
     text: 'Onde trabalham as pessoas em Brusque?',
     correctIndex: 0,
     options: [
-      { label: 'Fábricas', img: 'https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=400&q=80', alt: 'Fábrica têxtil' },
-      { label: 'Mar',      img: 'https://images.unsplash.com/photo-1559825481-12a05cc00344?w=400&q=80', alt: 'Pescador no mar' },
-      { label: 'Espaço',   img: 'https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=400&q=80', alt: 'Astronauta no espaço' },
+      { label: 'Fábricas', img: 'assets/imgs/fabrica_textil.png', alt: 'Fábrica têxtil' },
+      { label: 'Mar',      img: 'assets/imgs/pescador_por_do_sol.png', alt: 'Pescador no mar' },
+      { label: 'Espaço',   img: 'assets/imgs/astronauta_flutuando_espaco.png', alt: 'Astronauta no espaço' },
     ],
   },
   {
     text: 'Qual é o tamanho da cidade?',
     correctIndex: 1,
     options: [
-      { label: 'Pequena', img: 'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=400&q=80', alt: 'Cidade pequena' },
-      { label: 'Média',   img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Brusque_SC.jpg/640px-Brusque_SC.jpg', alt: 'Vista de Brusque' },
-      { label: 'Grande',  img: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&q=80', alt: 'Grande metrópole' },
+      { label: 'Pequena', img: 'assets/imgs/vista_aerea_cidade_campos.png', alt: 'Cidade pequena' },
+      { label: 'Média',   img: 'assets/imgs/cidade_brasileira_vista_aerea.png', alt: 'Vista de Brusque' },
+      { label: 'Grande',  img: 'assets/imgs/skyline_singapura_noite.png', alt: 'Grande metrópole' },
     ],
   },
   {
     text: 'O que as crianças fazem em Brusque?',
     correctIndex: 0,
     options: [
-      { label: 'Brincam',        img: 'https://images.unsplash.com/photo-1472162072942-cd5147eb3902?w=400&q=80', alt: 'Crianças brincando' },
-      { label: 'Voam de avião',  img: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&q=80', alt: 'Avião' },
-      { label: 'Vão para a Lua', img: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=400&q=80', alt: 'Lua' },
+      { label: 'Brincam',        img: 'assets/imgs/criancas_brincando_ao_ar_livre.png', alt: 'Crianças brincando' },
+      { label: 'Voam de avião',  img: 'assets/imgs/cockpit_aviao_pilotos.png', alt: 'Avião' },
+      { label: 'Vão para a Lua', img: 'assets/imgs/astronauta_na_lua.png', alt: 'Lua' },
     ],
   },
   {
     text: 'Por que Brusque é especial?',
     correctIndex: 0,
     options: [
-      { label: 'História e cultura', img: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=400&q=80', alt: 'Livros de história' },
-      { label: 'Ouro',               img: 'https://images.unsplash.com/photo-1610375461246-83df859d849d?w=400&q=80', alt: 'Ouro' },
-      { label: 'Sem pessoas',        img: 'https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=400&q=80', alt: 'Rua vazia' },
+      { label: 'História e cultura', img: 'assets/imgs/banner_historia.png', alt: 'Livros de história' },
+      { label: 'Ouro',               img: 'assets/imgs/pepitas_ouro.png', alt: 'Ouro' },
+      { label: 'Sem pessoas',        img: 'assets/imgs/rua_cidade_noite.png', alt: 'Rua vazia' },
     ],
   },
 ];
@@ -198,7 +198,7 @@ function loadQuestion() {
     card.innerHTML = `
       <div class="option-label">${opt.label}</div>
       <div class="option-img-wrap">
-        <img src="${opt.img}" alt="${opt.alt}" onerror="this.src='assets/imgs/placeholder.svg'">
+        <img src="${opt.img}" alt="${opt.alt}" onerror="this.src='assets/imgs/ilustracao_criancas_baloes.png'">
       </div>`;
     card.addEventListener('click', () => handleAnswer(idx, card));
     optionsGrid.appendChild(card);
