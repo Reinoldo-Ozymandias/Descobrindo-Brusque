@@ -137,6 +137,7 @@ python3 -m http.server 3000
 - **Parceiro:** Secretaria Municipal de Educação de Brusque
 - **Público-alvo:** Crianças de 4 a 5 anos (Educação Infantil)
 - **Ano:** 2026
+- **Estudante:** Reinoldo Antonio Vieira
 
 ---
 
