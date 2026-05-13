@@ -119,10 +119,6 @@ python3 -m http.server 3000
 
 ---
 
-> *Preencher com os nomes e usuários GitHub do grupo.*
-
----
-
 ## 🏫 Informações Acadêmicas
 
 - **Instituição:** UNIFEBE — Centro Universitário de Brusque
