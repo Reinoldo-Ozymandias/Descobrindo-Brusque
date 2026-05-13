@@ -8,7 +8,7 @@
 
 **Descobrindo Brusque** é um quiz interativo desenvolvido como parte do **Projeto de Curricularização da Extensão**, em parceria entre o curso de **Sistemas de Informação da UNIFEBE** e a **Secretaria Municipal de Educação de Brusque**.
 
-O jogo apresenta 15 perguntas sobre a história, cultura, geografia e tradições da cidade de Brusque de forma lúdica, visual e acessível ao público infantil da Educação Infantil.
+O jogo apresenta 15 perguntas sobre a história, cultura, geografia e tradições da cidade de Brusque de forma lúdica, visual e acessível ao público infantil da Educação Infantil (crianças de 4 a 5 anos).
 
 ---
 
@@ -16,28 +16,71 @@ O jogo apresenta 15 perguntas sobre a história, cultura, geografia e tradiçõe
 
 1. O jogador clica em **INICIAR** na tela inicial
 2. São exibidas 15 perguntas sequencialmente
-3. Cada pergunta tem **3 opções** com imagem e legenda (A, B, C)
-4. Se acertar → avança para a próxima pergunta
-5. Se errar → tela de "Tente Novamente" e pode repetir a pergunta
-6. Ao concluir todas as perguntas → tela de **PARABÉNS!** com pontuação
+3. Cada pergunta tem **3 opções** com imagem e legenda
+4. Se acertar → avança para a próxima pergunta com feedback visual
+5. Se errar → tela de "Tente Novamente" e repete a mesma pergunta
+6. Ao concluir todas as perguntas → tela de **PARABÉNS!** com pontuação final
 
 ---
 
 ## 🗂️ Estrutura do Projeto
 
 ```
-descobrindo-brusque/
-├── index.html              # Página principal do jogo
+Descobrindo-Brusque/
+├── index.html                          # Estrutura HTML do jogo (4 telas)
 ├── css/
-│   └── style.css           # Estilos visuais (cores, layout, animações)
+│   └── style.css                       # Estilos visuais, animações e layout
 ├── js/
-│   └── game.js             # Lógica do jogo e banco de perguntas
+│   └── game.js                         # Lógica do jogo e banco de perguntas
 ├── assets/
 │   └── imgs/
-│       ├── hero.png        # Ilustração principal (mascote)
-│       ├── placeholder.svg # Imagem padrão para ausentes
-│       ├── q01_a.jpg       # Imagens das questões (q01–q15, _a/_b/_c)
-│       └── ...
+│       ├── ilustracao_criancas_baloes.png  # Ilustração principal (mascote)
+│       ├── placeholder.svg                 # Imagem padrão para ausentes
+│       ├── mapa_santa_catarina.png
+│       ├── mapa_mesorregioes_rio_de_janeiro.png
+│       ├── mapa_argentina.png
+│       ├── retrato_historico_pintura.png
+│       ├── jogador_futebol_brasil.png
+│       ├── astronauta_caminhada_espacial.png
+│       ├── bandeira_alemanha_1.png
+│       ├── bandeira_alemanha_2.png
+│       ├── bandeira_japao.png
+│       ├── bandeira_africa_do_sul.png
+│       ├── bandeira_china.png
+│       ├── bandeira_arabia_saudita.png
+│       ├── enchente_cidade.png
+│       ├── manguezal_vista_aerea.png
+│       ├── rio_nilo_vista_aerea.png
+│       ├── fabrica_confeccoes.png
+│       ├── fabrica_avioes.png
+│       ├── fabrica_textil.png
+│       ├── robos_industriais.png
+│       ├── escudo_barcelona.png
+│       ├── escudo_brusque_fc.png
+│       ├── escudo_flamengo.png
+│       ├── chuva_janela_por_do_sol.png
+│       ├── cidade_nevada_inverno.png
+│       ├── dunas_deserto.png
+│       ├── bolo_kuchen_farofa.png
+│       ├── sushi_japones.png
+│       ├── pizza_pepperoni.png
+│       ├── desfile_oktoberfest_blumenau.png
+│       ├── carnaval_rio_sambodromo.png
+│       ├── papai_noel_natal.png
+│       ├── supermercado_fip.png
+│       ├── floresta_amazonica_aerea.png
+│       ├── montanhas_nevadas_floresta.png
+│       ├── pescador_por_do_sol.png
+│       ├── astronauta_flutuando_espaco.png
+│       ├── vista_aerea_cidade_campos.png
+│       ├── cidade_brasileira_vista_aerea.png
+│       ├── skyline_singapura_noite.png
+│       ├── criancas_brincando_ao_ar_livre.png
+│       ├── cockpit_aviao_pilotos.png
+│       ├── astronauta_na_lua.png
+│       ├── banner_historia.png
+│       ├── pepitas_ouro.png
+│       └── rua_cidade_noite.png
 └── README.md
 ```
 
@@ -61,73 +104,71 @@ descobrindo-brusque/
 | 12 | Onde trabalham as pessoas? | Fábricas |
 | 13 | Qual é o tamanho da cidade? | Média |
 | 14 | O que as crianças fazem em Brusque? | Brincam |
-| 15 | Por que Brusque é especial? | História |
-
----
-
-## 🖼️ Adicionando as Imagens
-
-As imagens ficam em `assets/imgs/`. Para cada questão existem 3 arquivos:
-
-- `q01_a.jpg`, `q01_b.jpg`, `q01_c.jpg`
-- `q02_a.jpg`, `q02_b.jpg`, `q02_c.jpg`
-- ... até `q15_c.jpg`
-- `hero.png` — ilustração dos mascotes (tela inicial e resultados)
-
-Enquanto uma imagem não for adicionada, o jogo exibe automaticamente o `placeholder.svg`.
-
-> **Dica:** use imagens em proporção 4:3 (ex: 400×300px) para melhor resultado.
+| 15 | Por que Brusque é especial? | História e cultura |
 
 ---
 
 ## 🎨 Design
 
-O projeto segue o Figma disponível em:  
+O projeto segue o protótipo desenvolvido no Figma:  
 [🔗 Figma — Descobrindo Brusque](https://www.figma.com/design/EwLTg2v38TZzNw0o8uaVTg/)
 
-Paleta de cores:
+**Paleta de cores:**
+
 | Nome | Hex |
 |------|-----|
 | Fundo | `#F5E4CC` |
-| Laranja (principal) | `#E8734A` |
+| Laranja principal | `#E8734A` |
 | Azul-esverdeado | `#4FC3C4` |
 | Amarelo | `#F5C842` |
 | Escuro | `#2D2D2D` |
 
-Tipografia: **Bubblegum Sans** (títulos) + **Nunito** (corpo)
+**Tipografia:** Bubblegum Sans (títulos) + Nunito (corpo) — ambas via Google Fonts.
 
 ---
 
 ## 🚀 Como Rodar Localmente
 
 ```bash
-# Clone o repositório
-git clone https://github.com/SEU-USUARIO/descobrindo-brusque.git
+# 1. Clone o repositório
+git clone https://github.com/Reinoldo-Ozymandias/Descobrindo-Brusque.git
 
-# Entre na pasta
-cd descobrindo-brusque
+# 2. Entre na pasta
+cd Descobrindo-Brusque
 
-# Abra o jogo (qualquer um dos métodos abaixo)
-# — Opção 1: abra o index.html diretamente no navegador
-# — Opção 2: use o Live Server do VS Code
-# — Opção 3: servidor Python local
+# 3. Abra o jogo — escolha uma das opções:
+
+# Opção A: abra o index.html diretamente no navegador
+
+# Opção B: Live Server do VS Code (recomendado)
+
+# Opção C: servidor Python local
 python3 -m http.server 3000
 # Acesse http://localhost:3000
 ```
 
-> Não há dependências de backend nem npm. Funciona com HTML + CSS + JS puro.
+> Não há dependências de backend, npm ou build. Funciona com HTML + CSS + JS puro.
+
+---
+
+## 👥 Integrantes
+
+| Nome | GitHub |
+|------|--------|
+| Reinoldo | [@Reinoldo-Ozymandias](https://github.com/Reinoldo-Ozymandias) |
 
 ---
 
 ## 🏫 Informações Acadêmicas
 
-- **Instituição:** UNIFEBE — Centro Universitário de Brusque
-- **Curso:** Sistemas de Informação
-- **Projeto:** Curricularização da Extensão
-- **Parceiro:** Secretaria Municipal de Educação de Brusque
-- **Público-alvo:** Crianças de 4 a 5 anos (Educação Infantil)
-- **Ano:** 2026
-- **Estudante:** Reinoldo Antonio Vieira
+| | |
+|---|---|
+| **Instituição** | UNIFEBE — Centro Universitário de Brusque |
+| **Curso** | Sistemas de Informação |
+| **Projeto** | Curricularização da Extensão |
+| **Parceiro** | Secretaria Municipal de Educação de Brusque |
+| **Público-alvo** | Crianças de 4 a 5 anos (Educação Infantil) |
+| **Ano** | 2026 |
 
 ---
 
