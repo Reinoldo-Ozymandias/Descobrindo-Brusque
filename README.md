@@ -119,12 +119,6 @@ python3 -m http.server 3000
 
 ---
 
-## 👥 Integrantes
-
-| Nome | GitHub | Função |
-|------|--------|--------|
-| — | — | — |
-
 > *Preencher com os nomes e usuários GitHub do grupo.*
 
 ---
